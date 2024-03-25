@@ -450,8 +450,7 @@ def create_html(dest, msgs_per_page=100):
 
                 cl = "msg me" if sender == "Me" else "msg"
                 print(
-                    f"<div class='{cl}'><span class=date>{date}</span>"
-                    f"<span class=time>{time}</span>"
+                    f"<div class='{cl}'><span class=date>{date} {time}</span>"
                     f"<span class=sender>{sender}</span>"
                     f"{quote}"
                     f"<span class=body>{soup.prettify()}</span>"

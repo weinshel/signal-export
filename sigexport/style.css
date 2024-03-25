@@ -2,21 +2,15 @@
     box-sizing: border-box;
 }
 
-html {
-    background-color: #F6F6F6;
-}
-
 body {
-    color: rgb(73, 78, 82);
-    font-family: Carlito, Calibri, sans-serif;
-    line-height: 1.5;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     margin: 0;
 }
 
 .first, .last, .next, .prev {
     position: fixed;
     left: 0;
-    font-size: 3em;
+    font-size: 1em;
     margin: 20px;
 }
 
@@ -45,17 +39,21 @@ body {
     display: block;
 }
 
+/* https://github.com/signalapp/Signal-iOS/blob/main/SignalUI/Appearance/ChatColors.swift */
+
 .msg {
     width: 70ch;
-    border-radius: 5px;
-    padding: 0.8rem 0.8rem 2rem 0.8rem;
-    margin-left: 150px;
-    background-color: #cecace;
+    border-radius: 20px;
+    padding: 0.5rem;
+    background-color: #e9e9e9;
+    color: #363636;
+    margin-left: 50px;
 }
 
 .msg.me {
-    margin-left: 450px;
-    background-color: #bfd9d7;
+    margin-left: 200px;
+    background-color: #2C6BED; 
+    color: #ffffff;
 }
 
 a {
@@ -68,7 +66,7 @@ a:hover {
 }
 
 div {
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 .date, .time {
@@ -85,7 +83,6 @@ div {
 
 .body {
     display: block;
-    margin-left: 3em;
     word-wrap: break-word;
 }
 
@@ -138,12 +135,15 @@ label > img {
 
 .reaction {
     float: right;
+    color: #363636;
+    padding-top: .5em;
+    margin-bottom: 1em;
 }
 
 .quote {
-    margin: .5rem 0 1rem 1rem;
-    background-color: #f7f6ff;
-    width: 50%;
-    padding: 1rem;
+    margin: .2rem;
+    background-color: #A5BEF6;
+    padding: .2rem;
+    color: #363636;
 }
 
